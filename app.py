@@ -6,7 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app) 
 
-# Load trained models
+# Load trained model
 diabetes_model = pickle.load(open("diabetes.pkl", "rb"))
 stress_model = pickle.load(open("stress.pkl", "rb"))
 thyroid_model = pickle.load(open("thyroid.pkl", "rb"))
