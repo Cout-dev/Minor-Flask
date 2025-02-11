@@ -83,5 +83,5 @@ def predict_calorie():
     prediction = calorie_model.predict(features)[0]
     return jsonify({'Estimated Calories Burnt': float(prediction)})
 
-if __name__ == '_main_':
+if __name__ == "__main__":
     app.run(debug=True)
